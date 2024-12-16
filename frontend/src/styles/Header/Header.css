@@ -1,0 +1,74 @@
+/* Общие стили для шапки */
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+body.with-header {
+  margin: 0;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 0;
+  box-sizing: border-box;
+}
+
+/* Навигация внутри шапки */
+.header-nav {
+  margin: auto;
+  max-width: 940px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+/* Левый блок навигации */
+.header-left {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.header-left a {
+  font-size: 28px;
+  padding: 13px;
+}
+
+/* Правый блок (уведомления и иконка пользователя) */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Стили для ссылок в шапке */
+.header-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Подсветка при наведении на ссылку */
+.header-link:hover {
+  background-color: #e0e0e0;
+}
+
+/* Для текста ссылок */
+.header-link-text {
+  font-weight: bold;
+}

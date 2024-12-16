@@ -1,0 +1,172 @@
+/* Основные стили для уведомлений */
+.notifications {
+  position: relative;
+  display: inline-block;
+}
+
+.notification-icon {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 17px;
+  transition: background-color 0.3s ease;
+}
+
+.notification-icon:hover {
+  background-color: #e0e0e0;
+}
+
+.notification-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #333;
+  transition: fill 0.3s ease;
+}
+
+/* Badge для уведомлений */
+.notification-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff4d4d;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Выпадающее меню уведомлений */
+.notification-dropdown {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 300px;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 1000;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 0;
+}
+
+/* Контейнер для элементов уведомлений */
+.notification-item-container {
+  border-bottom: 2px solid #ddd;
+}
+
+.notification-item-container:last-child {
+  border-bottom: none;
+}
+
+/* Элементы уведомлений */
+.notification-item {
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.notification-item.unread {
+  background-color: #f9f9f9; /* Для непрочитанных уведомлений */
+  font-weight: bold;
+}
+
+.notification-item.read {
+  background-color: #eaeaea; /* Для прочитанных уведомлений */
+  color: #888;
+}
+
+/* Время уведомления */
+.notification-time {
+  color: #888;
+  font-size: 14px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.notification-message {
+  flex-grow: 1;
+  font-size: 14px;
+  text-align: right;
+}
+
+/* Ссылки */
+.link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Заголовок выпадающего меню */
+.dropdown-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Кнопка очистки уведомлений */
+.clear-notifications-button {
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.clear-notifications-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.clear-notifications-button:active {
+  background-color: #004085;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.clear-notifications-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Сообщение "Нет уведомлений" */
+.no-notifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #888;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Снижение дублирования */
+.notification-item,
+.clear-notifications-button {
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Тени для разных элементов */
+.notification-dropdown,
+.clear-notifications-button,
+.no-notifications {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

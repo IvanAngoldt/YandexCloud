@@ -1,0 +1,95 @@
+.new-post-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.new-post-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.new-post-card h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.new-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.new-post-input,
+.new-post-textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #fefefe;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.new-post-input:focus,
+.new-post-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.new-post-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Контейнер для кнопок */
+.button-container {
+  display: flex;
+  justify-content: center; /* Центровка кнопки Submit */
+  align-items: center; /* Выравнивание по вертикали */
+  margin-top: 15px;
+  position: relative; /* Относительное позиционирование */
+  height: 50px; /* Фиксированная высота для выравнивания */
+}
+
+/* Кнопка Submit */
+.submit-button {
+  min-width: 150px; /* Увеличиваем минимальную ширину */
+  padding: 12px 20px;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.success-message {
+  color: green;
+  font-size: 0.9em;
+  text-align: center;
+}

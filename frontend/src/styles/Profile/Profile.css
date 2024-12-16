@@ -1,0 +1,70 @@
+/* Общий контейнер */
+.profile-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок профиля */
+.profile-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Информация о пользователе */
+.profile-info {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.profile-info h2,
+.profile-info h3 {
+  margin: 10px 0;
+  color: #555;
+}
+
+.profile-info h2 {
+  font-size: 1.5rem;
+}
+
+.profile-info h3 {
+  font-size: 1.2rem;
+}
+
+/* Список постов */
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Сообщение об ошибке */
+.error-message {
+  color: red;
+  font-size: 1rem;
+}
+
+/* Нет блогов */
+.no-blogs {
+  font-size: 1.1rem;
+  color: #888;
+  text-align: center;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Занимает весь экран */
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}

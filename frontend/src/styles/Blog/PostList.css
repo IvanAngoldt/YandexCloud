@@ -1,0 +1,78 @@
+/* PostList.css */
+.post-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-list-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.post-list-empty {
+  display: flex; /* Используем flexbox для выравнивания */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  height: 150px; /* Высота блока для визуального выделения */
+  font-size: 1.2rem; /* Размер текста */
+  font-weight: bold; /* Жирный текст */
+  color: #555; /* Более заметный серый цвет */
+  background-color: #f9f9f9; /* Светлый фон */
+  border-radius: 10px; /* Закруглённые углы */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+  text-align: center; /* Выравнивание текста */
+  margin: 20px 0; /* Отступы сверху и снизу */
+  padding: 20px; /* Внутренние отступы для текста */
+}
+
+/* NewPost.css */
+.new-post-container {
+  margin-bottom: 30px;
+}
+
+.new-post-container h2 {
+  text-align: center;
+}
+
+.new-post-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.new-post-container input,
+.new-post-container textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.new-post-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.new-post-container button:hover {
+  background: #0056b3;
+}

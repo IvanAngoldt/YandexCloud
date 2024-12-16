@@ -1,0 +1,96 @@
+body {
+  padding-top: 0px;
+}
+
+body.no-header {
+  padding-top: 0;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .register-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Изменено с фиксированного значения */
+    max-width: 396px; /* Максимальная ширина для формы */
+    text-align: center;
+    box-sizing: border-box; /* Учитываем отступы в ширине */
+  }
+  
+  .register-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .form-input {
+    width: calc(100% - 24px); /* Учитываем padding контейнера */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Учитываем ширину для border и padding */
+  }
+  
+  .form-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .register-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .register-button:hover:not(:disabled) {
+    background-color: #218838;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .login-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .login-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .smart-captcha {
+    margin-bottom: 15px;
+  }

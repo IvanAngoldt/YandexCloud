@@ -1,0 +1,64 @@
+.like-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.heart {
+  font-size: 24px;
+  user-select: none;
+}
+
+.like-count {
+  font-size: 14px;
+  margin-left: 8px;
+  color: #333;
+  font-weight: bold;
+}
+
+.like-button.liked .heart {
+  color: #e0245e; /* Цвет красного сердца */
+}
+
+.tooltip {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  border-radius: 8px;
+  padding: 12px;
+  width: 220px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+
+.tooltip h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #e0245e;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 5px;
+}
+
+.tooltip ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tooltip ul li {
+  margin: 6px 0;
+}
+
+.tooltip ul li a {
+  color: #ffffff; /* Устанавливаем цвет белый */
+  text-decoration: none; /* Убираем подчеркивание */
+  transition: color 0.3s ease; /* Добавляем плавный переход */
+}
+
+.tooltip ul li a:hover {
+  color: #e0245e; /* Цвет при наведении: красный */
+  text-decoration: none; /* Убираем подчеркивание даже при наведении */
+}
